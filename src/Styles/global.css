@@ -1,0 +1,231 @@
+/* =========================
+   THEME COLOR VARIABLES
+   ========================= */
+
+/* Light Theme */
+.light {
+  --primary: #d2d8ce;
+  --tert: #d2d8ce8f;
+  --secondary: #979b93;
+  --quat: #d2d8ce;
+}
+
+/* Neutral Theme */
+.neutral {
+  --primary: #8f8991;
+  --tert: #8f89918f;
+  --secondary: #5d595e;
+  --quat: #babdb7;
+}
+
+/* Dark Theme */
+.dark {
+  --primary: #4c3954;
+  --tert: #4c39548f;
+  --secondary: #624e6b;
+  --quat: #b3d6d4;
+}
+
+/* =========================
+   BACKGROUND COLORS
+   ========================= */
+body {
+  background-color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-tert {
+  background-color: var(--tert);
+}
+
+.bg-quat {
+  background-color: var(--quat);
+}
+
+/* Gradient Backgrounds */
+.bg-gradient {
+  background: radial-gradient(
+    at left bottom,
+    var(--primary) 20%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+.bg-gradient-full {
+  background: linear-gradient(
+    to top,
+    var(--primary) 85%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.bg-perlin-teal {
+  background-image: url("/Texture/Perlin_Teal.jpg");
+}
+
+.bg-desktop {
+  background-image: url("/Images/Desk_Wallpaper.jpg");
+}
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 5px);
+  }
+  12.5% {
+    transform: translate(3px, 3px);
+  }
+  25% {
+    transform: translate(5px, 0px);
+  }
+  37.5% {
+    transform: translate(3px, -3px);
+  }
+  50% {
+    transform: translate(0px, -5px);
+  }
+  62.5% {
+    transform: translate(-3px, -3px);
+  }
+  75% {
+    transform: translate(-5px, 0px);
+  }
+  87.5% {
+    transform: translate(-3px, 3px);
+  }
+  100% {
+    transform: translate(0px, 5px);
+  }
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 15px #00d5d586;
+  animation: blob 10s infinite linear;
+}
+
+/* =========================
+   CUSTOM SCROLLBAR
+   ========================= */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+/* =========================
+   CUSTOM TEXT SIZE
+   ========================= */
+.text-xxs {
+  font-size: 4px;
+}
+
+/* =========================
+   CALENDAR STYLING
+   ========================= */
+.react-calendar {
+  width: 350px;
+  max-width: 100%;
+  background: var(--quat) !important;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(25, 25, 25);
+}
+
+/* Calendar Header */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.react-calendar__navigation button {
+  color: rgb(26, 26, 26);
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.react-calendar__navigation button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Calendar Days */
+.react-calendar__month-view__days button {
+  color: rgb(27, 27, 27);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.react-calendar__month-view__days button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Selected Day */
+.react-calendar__tile--active {
+  background: #047857 !important;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Today's Date */
+.react-calendar__tile--now {
+  background: #059669 !important;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* Disabled Dates */
+.react-calendar__tile--disabled {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* Weekday Labels */
+.react-calendar__month-view__weekdays {
+  color: #065f46;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .react-calendar {
+    width: 100%;
+  }
+}

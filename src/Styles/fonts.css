@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Lobster&display=swap");
+
+.coustard {
+  font-family: "Coustard", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster {
+  font-family: "Lobster", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.coustardB {
+  font-family: "Coustard", serif;
+  font-weight: 900;
+  font-style: normal;
+}
