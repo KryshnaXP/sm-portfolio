@@ -25,7 +25,7 @@ const projects = [
       "Showcases real-time project updates",
       "Optimized for high performance",
     ],
-    link: "https://sm-portfolio.vercel.app/",
+    link: "https://sm-portfolio-kryshnaxp-projects.vercel.app/",
   },
 ];
 
