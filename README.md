@@ -3,7 +3,7 @@
 Welcome to my 3D Portfolio! This interactive web experience showcases my skills, projects, and achievements using cutting-edge web technologies and 3D graphics.
 
 ## 🚀 Live Demo
-Check out the live website: [sm-portfolio.vercel.ap](https://sm-portfolio.vercel.app)
+Check out the live website: [sm-portfolio.vercel.app](https://sm-portfolio.vercel.app)
 
 ## 📌 Features
 - **Interactive 3D Environment** 🌍
